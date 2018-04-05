@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>主页</title>
+<link rel="stylesheet" href="css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">个人主页</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="admin.html">控制台</a></li>
+      <li class="layui-nav-item"><a href="timelist.html">时间廊</a></li>
+      <li class="layui-nav-item"><a href="https://github.com/panjianghui">github</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它菜单</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          heavan
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退出</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">所有商品</a>
+          <dl class="layui-nav-child" >
+            <dd id="nav-dl-1" onclick="onclick1()"><a href="javascript:;">时间廊</a></dd>
+            <dd><a id="nav-dl-2" onclick="onclick2()" href="javascript:;">用户管理</a></dd>
+            <dd><a href="javascript:;">内容管理</a></dd>
+            <dd><a href="">超链接</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item" lay-filter="nav-child">
+          <a href="javascript:;">解决方案</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">列表一</a></dd>
+            <dd><a href="javascript:;">列表二</a></dd>
+            <dd><a href="">超链接</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">其他</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="layui-body-id" class="layui-body" >
+    <!-- 内容主体区域 -->
+   <!-- <div style="padding: 15px;">内容主体区域</div>-->
+<div class="layui-tab layui-tab-card" style="width: 1200px;">
+  <ul class="layui-tab-title">
+    <li class="layui-this">网站设置</li>
+    <li>用户管理</li>
+    <li>权限分配</li>
+    <li>商品管理</li>
+    <li>订单管理</li>
+  </ul>
+  <div class="layui-tab-content" style="height: 100px;">
+    <div class="layui-tab-item layui-show">
+      1. 宽度足够，就不会出现右上图标；宽度不够，就会开启展开功能。
+      <br>2. 如果你的宽度是自适应的，Tab会自动判断是否需要展开，并适用于所有风格。
+    </div>
+    <div class="layui-tab-item">2</div>
+    <div class="layui-tab-item">3</div>
+    <div class="layui-tab-item">4</div>
+    <div class="layui-tab-item">5</div>
+    <div class="layui-tab-item">6</div>
+  </div>
+</div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+     by 546540274@qq.com 
+  </div>
+</div>
+<script src="layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+<script >
+
+//切换列表1页面
+function onclick1(){
+	document.getElementById("layui-body-id").innerHTML = '<iframe src="timelist.html" height=\'100%\' width=\'100%\'></iframe>';
+}
+//切换列表2页面
+function onclick2(){
+	document.getElementById("layui-body-id").innerHTML = "<iframe src='views/userlist.html' height=\'100%\' width=\'100%\'></iframe>";
+}
+</script>
+
+</body>
+</html>
