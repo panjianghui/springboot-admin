@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="source">
+    <output-path>$PROJECT_DIR$/out/artifacts/source</output-path>
+    <root id="archive" name="source.war">
+      <element id="module-output" name="springboot-admin" />
+      <element id="module-output" name="portal" />
+      <element id="module-output" name="utils" />
+      <element id="module-output" name="file" />
+    </root>
+  </artifact>
+</component>

@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="file" />
         <module name="portal" />
         <module name="utils" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="file" target="1.8" />
       <module name="portal" target="1.8" />
       <module name="springboot-admin" target="1.8" />
       <module name="utils" target="1.8" />

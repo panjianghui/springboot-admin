@@ -18,6 +18,7 @@
      <modules>
          <module>portal</module>
          <module>utils</module>
+         <module>file</module>
      </modules>
 
     <dependencies>
