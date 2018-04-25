@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Maven: com.pjh.v1:file:unknown">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pjh/v1/file/unknown/file-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pjh/v1/file/unknown/file-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

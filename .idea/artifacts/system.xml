@@ -2,10 +2,7 @@
   <artifact type="war" build-on-make="true" name="system">
     <output-path>$PROJECT_DIR$/out/artifacts/system</output-path>
     <root id="archive" name="system.war">
-      <element id="artifact" artifact-name="source" />
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      </element>
+      <element id="artifact" artifact-name="portal:war exploded" />
     </root>
   </artifact>
 </component>
