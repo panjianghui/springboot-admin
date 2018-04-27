@@ -12,7 +12,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="file" target="1.7" />
+      <module name="file" target="1.8" />
       <module name="portal" target="1.7" />
       <module name="springboot-admin" target="1.7" />
       <module name="utils" target="1.7" />
